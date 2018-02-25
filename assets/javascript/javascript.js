@@ -6,10 +6,10 @@ $(function() {
 
 var searchArray = ['Grand Teton National Park', 'Great Smoky Mountains National Park', 'Grand Canyon', 'Serengeti National Park', 'Hawaii Volcanoes National Park', 'Yellowstone National Park', 'Sequoia National Park', 'Rocky Mountain National Park', 'Yosemite National Park', 'Mount Rainier National Park', 'Zion National Park', 'Arches National Park', 'Great Barrier Reef', 'Joshua Tree National Park', 'Olympic National Park', 'Bryce Canyon National Park', 'Haleakala National Park', 'Kruger National Park', 'Capitol Reef National Park', 'Torres Del Paine National Park'];
 
-//Add animal not working either
+
 
  function populateButtons(searchArray, classToAdd, areaToAddTo) {
-  //this doesn't work
+ 
   console.log(searchArray);
  $(areaToAddTo).empty();
  	for (var i=0; i<searchArray.length;i++) {
@@ -24,7 +24,7 @@ var searchArray = ['Grand Teton National Park', 'Great Smoky Mountains National 
    $(document).on('click', '.searchButton', function() {
  	 $('#searches').empty();
  	 var type = $(this).data('type');
- 	  	 var queryURL = 'http://api.giphy.com/v1/gifs/search?q=' + type + '&api_key=GVITKYuCjEdmR264ze6m4fdjyy37ct8U&limit=10';
+ 	  	 var queryURL = 'https://api.giphy.com/v1/gifs/search?q=' + type + '&api_key=GVITKYuCjEdmR264ze6m4fdjyy37ct8U&limit=10';
 
 
    	 $.ajax({url:queryURL,method:'GET'})
