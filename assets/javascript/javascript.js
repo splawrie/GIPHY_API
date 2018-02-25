@@ -4,12 +4,10 @@ $(function() {
 
 })
 
-var searchArray = ['Grand Teton National Park', 'Great Smoky Mountains National Park', 'Grand Canyon', 'Serengeti National Park', 'Hawaii Volcanoes National Park', 'Yellowstone National Park', 'Sequoia National Park', 'Rocky Mountain National Park', 'Yosemite National Park', 'Mount Rainier National Park', 'Zion National Park', 'Arches National Park', 'Great Barrier Reef', 'Joshua Tree National Park', 'Olympic National Park', 'Bryce Canyon National Park', 'Haleakala National Park', 'Kruger National Park', 'Capitol Reef National Park', 'Torres Del Paine National Park'];
-
-
+var searchArray = ['Schnoodle', 'Maltipoo', 'Cockapoo', 'Labradoodle', 'Pekepoo', 'Goldendoodle', 'Giant Poodle', 'Poodle', 'Yorkipoo', 'Shihpoo'];
 
  function populateButtons(searchArray, classToAdd, areaToAddTo) {
- 
+
   console.log(searchArray);
  $(areaToAddTo).empty();
  	for (var i=0; i<searchArray.length;i++) {
