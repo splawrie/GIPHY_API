@@ -2,6 +2,10 @@ body {
 	background: #eee;
 }
 
+#searches {
+	width:85%;
+}
+
 .search-item {
 	float: left;
 	padding: 10px;
@@ -26,8 +30,8 @@ label {
 input[type="text"] {
 	width: 100%;
 	margin-bottom: 10px;
-	height: 30px;
 	font-size: 18px;
+	height: 30px;	
 }
 
 button,
